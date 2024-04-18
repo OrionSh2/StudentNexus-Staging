@@ -8,42 +8,39 @@ Our web-based application is user-friendly and easy to use. You can access all t
 
 ## Features
 
-### Student management
+- **Student Management**: Create, update, and retrieve student records with details such as name, student ID, contact information, and academic profile.
+- **Course Management**: Define and manage course offerings, including course codes, descriptions, credits, and prerequisites.
+- **Enrollment Management**: Allow students to enroll in courses, track enrollment status, and record grades.
+- **Instructor Management**: Maintain information about instructors, including their contact details and assigned courses.
+- **Real-time Updates**: Leverage WebSockets for real-time updates, ensuring that changes to student records or course information are immediately reflected across the application.
+- **Reporting and Analytics**: Generate comprehensive reports and analyze data to gain insights into student performance, course enrollments, and other academic metrics.
+- **Authentication and Authorization**: Secure the application with user authentication and role-based access control, ensuring that only authorized users can access and perform specific actions.
+- **Progressive Web App (PWA) Features**: Enjoy a native-like experience with features such as offline functionality, push notifications, and the ability to install the application on devices.
 
-- Create, update and delete student profiles
-- Capture student demographic information such as name, age, and contact details
-- Upload student photos for easy identification
+## Technologies Used
 
-### Course management
-
-- Create, update and delete course offerings
-- Specify course details such as title, description, and duration
-- Set course start and end dates, as well as capacity and enrollment limits
-
-### Attendance tracking
-
-- Track student attendance for each course
-- Generate attendance reports to identify patterns and trends
-- Send automatic reminders to students who have missed classes
-
-### Reports
-
-- Generate reports on student progress and course completion
-- Export reports in various formats for further analysis
-- Use reports to make data-driven decisions about course offerings and student performance
+- **Backend**: [Laravel](https://laravel.com/) (PHP web framework)
+- **Frontend**: [Vue.js](https://vuejs.org/) (JavaScript framework)
+- **Database**: [PostgreSQL](https://www.postgresql.org/) (Relational database management system)
+- **WebSockets**: [Laravel WebSockets](https://beyondco.de/docs/laravel-websockets/getting-started/introduction) (Real-time communication)
+- **PWA**: [Workbox](https://developers.google.com/web/tools/workbox) (Progressive Web App libraries)
 
 ## Getting Started
 
-1. Clone the repository: `git clone <https://github.com/yourusername/StudentNexus.git>`
-2. Install dependencies: `composer install`
-3. Copy the `.env.example` file to `.env` and update the values with your own database details
-4. Run the migration: `php artisan migrate`
-5. Start the server: `php artisan serve`
-6. Visit [http://localhost:8000](http://localhost:8000/) to access the web app
+To get a local copy of the project up and running, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/student-information-system.git`
+2. Navigate to the project directory: `cd student-information-system`
+3. Install backend dependencies: `composer install`
+4. Install frontend dependencies: `npm install`
+5. Configure the database connection in the `.env` file
+6. Run database migrations: `php artisan migrate`
+7. Start the development server: `npm run watch`
+8. Start the WebSockets server: `php artisan websockets:serve`
 
 ## Contributing
 
-Contributions are welcome! Please create an issue to discuss any proposed changes before submitting a pull request.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 ## License
 
