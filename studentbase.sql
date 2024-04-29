@@ -1,8 +1,8 @@
 -- Create a new database
-CREATE DATABASE studentnexus;
+-- CREATE DATABASE studentnexus;
 
 -- Switch to the new database
-\c studentnexus;
+-- \c studentnexus;
 
 -- Create a table for students
 CREATE TABLE students (

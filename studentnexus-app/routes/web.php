@@ -22,3 +22,10 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/students', function () {
+    return view('students');
+})->name('students');
