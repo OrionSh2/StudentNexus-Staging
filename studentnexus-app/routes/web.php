@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\MemberController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -29,3 +30,4 @@ Route::get('/', function () {
 Route::get('/students', function () {
     return view('students');
 })->name('students');
+Route::get('list',[MemberController::class,'show']);
